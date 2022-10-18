@@ -1,0 +1,88 @@
+body {
+  margin: 20px;
+}
+
+.taylor-img{
+  width: 150px;
+  margin-right: 0px;
+  box-shadow: -3px -3px 8px #ffcad4;
+}
+
+.info-text{
+  padding-top: 30px;
+}
+
+.card{
+  /*These three properties center the card on the site */
+  width: 400px;
+  height: 205px;
+  margin: 0px auto;
+
+  /* These two properties makes the divs or children in the card itself centered-ish. For a proper center the justify would be :center */
+  display: flex;
+  justify-content: space-around;
+  
+  padding: 18px 22px;
+
+  color: #2b2839;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  border-bottom: 7px solid #ffcad4;
+  border-radius: 10px;
+  background: #c2eeee;
+
+  /* This property centers the text */
+  text-align: center;
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+}
+
+.details-text{
+  display: none;
+  text-align: center;
+}
+
+.occupation-text:hover + .details-text{
+  display: flex;
+  text-align: center;
+  padding-left: 20px;
+}
+
+/*Trying to get on hover the text shifts up*/
+.occupation-text:hover + .info-text{
+  padding-top: 10px;
+  color:rgb(21, 21, 206);
+}
+
+.occupation-text:hover{
+  display: none;
+}
+
+.occupation-text{
+  background: #b3e1e1;
+  border-radius: 7px;
+}
+
+/* Utility class (a class to be given to multiple elements that only has a single CSS property */
+.dotted-border{
+  border: rgb(21, 21, 206) dotted 2px;
+}
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯 - need to learn how to get shadow ontop of the background :)
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
+/*
+Final challenge:
+Download the code to your local computer and place it
+in a folder called "business-card"
+*/
